@@ -1,11 +1,14 @@
-CFLAGS=-Wall
+TARGETS=scanning
 
+OBJECTS=$(addsuffix .o, $(TARGETS))
+
+CFLAGS=-Wall
 ifdef DEBUG
 	CFLAGS+=-g
 endif
 
-scanning: scanning.o
+$(TARGETS): $(OBJECTS)
 
 .PHONY: clean
 clean:
-	$(RM) -rf scanning *.o
+	$(RM) -rf $(TARGETS) $(OBJECTS)
