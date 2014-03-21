@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
+
+unsigned short *generateInput(int size, unsigned short *a){
+
+	srand(time(NULL));
+	int r = rand();	
+	return r;
+}
 
 int main (int argc, char *argv[]){
 
