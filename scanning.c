@@ -37,6 +37,12 @@ int main (int argc, char *argv[]){
 		sprintf(output[i],"%d",input[i]);
 		printf("\noutput[%d] = %s \n",i,output[i]);
 	}
+
+	free(input);
+	for(i = 0; i < numelem; i++){
+		free(*(output+i));
+	}
+	free(output);
 	
 	return 0;	
 }
