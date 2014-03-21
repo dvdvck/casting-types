@@ -1,3 +1,7 @@
+casting-types
+=============
+Uso de la función calada proporcionada por khin
+
 # La funcion calada #
 
 Se tiene el siguiente plantamiento:
@@ -34,4 +38,3 @@ for(i = 0; i < inputSize; i++){
   output[i] = (unsigned char *)input[i];
 }
 ```
-
